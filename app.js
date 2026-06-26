@@ -88,11 +88,11 @@ text:"Sure 🚀"
 yash:[
 {
 type:"received",
-text:"I'm gay."
+text:"Wassup?"
 },
 {
 type:"sent",
-text:"I knew 😂"
+text:"Hey! Just chilling."
 }
 ]
 
