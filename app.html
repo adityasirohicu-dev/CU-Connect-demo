@@ -1,0 +1,739 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CU Connect</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            CU Connect
+        </div>
+
+        <nav>
+
+            <button onclick="showPage('home')">
+                🏠 Home
+            </button>
+
+            <button onclick="showPage('explore')">
+                🔍 Explore
+            </button>
+
+            <button onclick="showPage('events')">
+                🎉 Events
+            </button>
+
+            <button onclick="showPage('communities')">
+                🎭 Communities
+            </button>
+
+            <button onclick="showPage('academic')">
+                📚 Academic Hub
+            </button>
+
+            <button onclick="showPage('messages')">
+                💬 Messages
+            </button>
+
+            <button onclick="showPage('profile')">
+                👤 Profile
+            </button>
+
+        </nav>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="content">
+
+        <!-- HOME -->
+
+        <section id="home" class="page active">
+
+            <h1>Home Feed</h1>
+            <button id="createPostBtn">
+                ➕ Create Post
+            </button>
+            <button id="createStoryBtn">
+                📸 Create Story
+            </button>
+            <div class="stories">
+
+                <div class="story" onclick="openStory(0)">
+                    <img src="https://i.pravatar.cc/150?img=5">
+                    <p>You</p>
+                </div>
+
+                <div class="story" onclick="openStory(1)">
+                    <img src="https://i.pravatar.cc/150?img=12">
+                    <p>Aryan</p>
+                </div>
+
+                <div class="story" onclick="openStory(2)">
+                    <img src="https://i.pravatar.cc/150?img=18">
+                    <p>Priya</p>
+                </div>
+
+                <div class="story" onclick="openStory(3)">
+                    <img src="https://i.pravatar.cc/150?img=22">
+                    <p>Rahul</p>
+                </div>
+
+                <div class="story" onclick="openStory(4)">
+                    <img src="https://i.pravatar.cc/150?img=28">
+                    <p>Yash</p>
+                </div>
+
+                <div class="story" onclick="openStory(5)">
+                    <img src="https://i.pravatar.cc/150?img=35">
+                    <p>Ananya</p>
+                </div>
+
+                <div class="story" onclick="openStory(6)">
+                    <img src="https://i.pravatar.cc/150?img=40">
+                    <p>Karan</p>
+                </div>
+
+                <div class="story" onclick="openStory(7)">
+                    <img src="https://i.pravatar.cc/150?img=47">
+                    <p>Riya</p>
+                </div>
+
+                <div class="story" onclick="openStory(8)">
+                    <img src="https://i.pravatar.cc/150?img=52">
+                    <p>Dev</p>
+                </div>
+
+            </div>
+
+            <div id="postsContainer">
+
+                <!-- ADITYA -->
+
+                <div class="post">
+
+                    <div class="post-header">
+
+                        <img src="https://i.pravatar.cc/60?img=1">
+
+                        <div>
+                            <h3>Aditya Sirohi</h3>
+                            <p>CSE Core • 2nd Year</p>
+                        </div>
+
+                    </div>
+
+                    <img class="post-image" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200">
+
+                    <p class="caption">
+                        Working on CU Connect 🚀
+                    </p>
+
+                    <div class="post-actions">
+                        <button>❤️ 324</button>
+                        <button>💬 41</button>
+                        <button>📤 Share</button>
+                    </div>
+
+                </div>
+
+                <!-- AI CLUB -->
+
+                <div class="post">
+
+                    <div class="post-header">
+
+                        <img src="https://i.pravatar.cc/60?img=15">
+
+                        <div>
+                            <h3>AI & ML Club</h3>
+                            <p>Official Club</p>
+                        </div>
+
+                    </div>
+
+                    <img class="post-image" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200">
+
+                    <p class="caption">
+                        🚀 Machine Learning Workshop this Saturday.
+                    </p>
+
+                    <div class="post-actions">
+                        <button>❤️ 518</button>
+                        <button>💬 62</button>
+                        <button>📤 Share</button>
+                    </div>
+
+                </div>
+
+                <!-- EVENTS -->
+
+                <div class="post">
+
+                    <div class="post-header">
+
+                        <img src="https://i.pravatar.cc/60?img=30">
+
+                        <div>
+                            <h3>CU Events</h3>
+                            <p>Official</p>
+                        </div>
+
+                    </div>
+
+                    <img class="post-image" src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=1200">
+
+                    <p class="caption">
+                        🎉 CU Hackathon registrations close tomorrow.
+                    </p>
+
+                    <div class="post-actions">
+                        <button>❤️ 740</button>
+                        <button>💬 84</button>
+                        <button>📤 Share</button>
+                    </div>
+
+                </div>
+
+                <!-- ACADEMIC -->
+
+                <div class="post">
+
+                    <div class="post-header">
+
+                        <img src="https://i.pravatar.cc/60?img=45">
+
+                        <div>
+                            <h3>Anonymous Student</h3>
+                            <p>Academic Hub</p>
+                        </div>
+
+                    </div>
+
+                    <p class="caption">
+                        How should I prepare for Java MST?
+                        Any seniors who can help?
+                    </p>
+
+                    <div class="post-actions">
+                        <button>⬆ 129</button>
+                        <button>💬 37</button>
+                    </div>
+
+                </div>
+
+                <!-- LOST & FOUND -->
+
+                <div class="post">
+
+                    <div class="post-header">
+
+                        <img src="https://i.pravatar.cc/60?img=50">
+
+                        <div>
+                            <h3>Lost & Found</h3>
+                            <p>Campus Notice</p>
+                        </div>
+
+                    </div>
+
+                    <p class="caption">
+                        Found a black wallet near the library.
+                        Contact if it belongs to you.
+                    </p>
+
+                    <div class="post-actions">
+                        <button>📢 Boost</button>
+                        <button>📩 Contact</button>
+                    </div>
+
+                </div>
+
+                <!-- USER POST 1 -->
+
+                <div class="post">
+
+                    <div class="post-header">
+
+                        <img src="https://i.pravatar.cc/60?img=12">
+
+                        <div>
+                            <h3>Aryan Singh</h3>
+                            <p>CSE Core • 2nd Year</p>
+                        </div>
+
+                    </div>
+
+                    <img class="post-image" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200">
+
+                    <p class="caption">
+                        Finally completed my web development project after three days of debugging 😭💻
+                    </p>
+
+                    <div class="post-actions">
+                        <button>❤️ 247</button>
+                        <button>💬 31</button>
+                        <button>📤 Share</button>
+                    </div>
+
+                </div>
+
+                <!-- USER POST 2 -->
+
+                <div class="post">
+
+                    <div class="post-header">
+
+                        <img src="https://i.pravatar.cc/60?img=18">
+
+                        <div>
+                            <h3>Priya Sharma</h3>
+                            <p>AI & ML • 2nd Year</p>
+                        </div>
+
+                    </div>
+
+                    <img class="post-image" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200">
+
+                    <p class="caption">
+                        Team meeting before tomorrow's Hackathon 🚀
+                    </p>
+
+                    <div class="post-actions">
+                        <button>❤️ 612</button>
+                        <button>💬 82</button>
+                        <button>📤 Share</button>
+                    </div>
+
+                </div>
+
+                <!-- USER POST 3 -->
+
+                <div class="post">
+
+                    <div class="post-header">
+
+                        <img src="https://i.pravatar.cc/60?img=22">
+
+                        <div>
+                            <h3>Rahul Verma</h3>
+                            <p>Startup Society</p>
+                        </div>
+
+                    </div>
+
+                    <img class="post-image" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200">
+
+                    <p class="caption">
+                        Sunset after today's classes 🌅
+                    </p>
+
+                    <div class="post-actions">
+                        <button>❤️ 1.3K</button>
+                        <button>💬 109</button>
+                        <button>📤 Share</button>
+                    </div>
+
+                </div>
+
+                <!-- USER POST 4 -->
+
+                <div class="post">
+
+                    <div class="post-header">
+
+                        <img src="https://i.pravatar.cc/60?img=28">
+
+                        <div>
+                            <h3>Yash Srivastava</h3>
+                            <p>CSE AIML</p>
+                        </div>
+
+                    </div>
+
+                    <img class="post-image" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200">
+
+                    <p class="caption">
+                        Midnight pizza after finishing assignments 🍕🔥
+                    </p>
+
+                    <div class="post-actions">
+                        <button>❤️ 893</button>
+                        <button>💬 56</button>
+                        <button>📤 Share</button>
+                    </div>
+
+                </div>
+
+            </div>
+            ```
+
+
+        </section>
+        <!-- CREATE POST MODAL -->
+
+        <div id="createPostModal" class="modal">
+
+            <div class="modal-content">
+
+                <span id="closeModal">&times;</span>
+
+                <h2 id="modalTitle">
+                    Create Post
+                </h2>
+
+                <input type="text" id="postTitle" placeholder="Post title">
+
+                <textarea id="postContent" placeholder="What's on your mind?">
+        </textarea>
+                <label class="uploadLabel">
+
+                    📷 Upload Photo / 🎥 Video
+
+                    <input type="file" id="mediaUpload" accept="image/*,video/*">
+
+                </label>
+                <button id="publishPost">
+                    Publish Post
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- EXPLORE -->
+
+        <section id="explore" class="page">
+
+            <h1>Explore Students</h1>
+
+            <div class="cards">
+
+                <div class="card">
+                    <img src="https://i.pravatar.cc/120?img=12">
+                    <h3>Aryan Singh</h3>
+                    <p>AI & ML</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.pravatar.cc/120?img=18">
+                    <h3>Priya Sharma</h3>
+                    <p>Design Club</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.pravatar.cc/120?img=25">
+                    <h3>Rahul Verma</h3>
+                    <p>Startup Society</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- EVENTS -->
+
+        <section id="events" class="page">
+
+            <h1>Events</h1>
+
+            <div class="event-card">
+
+                <h2>CU Hackathon 2026</h2>
+
+                <p>
+                    Biggest coding event on campus.
+                </p>
+
+                <button>
+                    Register
+                </button>
+
+            </div>
+
+        </section>
+        <!-- COMMUNITIES -->
+
+        <section id="communities" class="page">
+
+            <h1>Communities</h1>
+
+            <div class="cards">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400">
+                    <h3>AI & ML Club</h3>
+                    <p>1,204 Members</p>
+                    <button>Join Club</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400">
+                    <h3>Startup Society</h3>
+                    <p>832 Members</p>
+                    <button>Join Club</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400">
+                    <h3>Gaming Community</h3>
+                    <p>1,532 Members</p>
+                    <button>Join Club</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ACADEMIC HUB -->
+
+        <section id="academic" class="page">
+
+            <h1>Academic Hub</h1>
+
+            <div class="post">
+
+                <div class="post-header">
+
+                    <img src="https://i.pravatar.cc/60?img=10">
+
+                    <div>
+                        <h3>Anonymous Student</h3>
+                        <p>CSE Core</p>
+                    </div>
+
+                </div>
+
+                <div class="caption">
+
+                    <h3>
+                        How should I prepare for Java MST?
+                    </h3>
+
+                    <br>
+
+                    <p>
+                        I understand OOP basics but struggle with coding questions.
+                    </p>
+
+                    <br>
+
+                    <button>
+                        ⬆ Upvote
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- MESSAGES -->
+
+        <section id="messages" class="page">
+
+            <h1>Messages</h1>
+
+            <div class="chat-tabs">
+
+                <button id="personalBtn" class="active-tab" onclick="showChatTab('personal')">
+                    Personal
+                </button>
+
+                <button id="communityBtn" onclick="showChatTab('community')">
+                    Communities
+                </button>
+
+            </div>
+
+            <!-- PERSONAL CHATS -->
+
+            <div id="personalChats">
+
+                <div class="chat-layout">
+
+                    <div class="chat-sidebar">
+
+                        <div class="chat-person active-chat" onclick="loadPersonalChat('aryan')">
+                            Aryan Singh 🟢
+                        </div>
+
+                        <div class="chat-person" onclick="loadPersonalChat('priya')">
+                            Priya Sharma
+                        </div>
+
+                        <div class="chat-person" onclick="loadPersonalChat('rahul')">
+                            Rahul Verma
+                        </div>
+                        <div class="chat-person" onclick="loadPersonalChat('yash')">
+                            Yash Srivastava 🟢
+                        </div>
+
+                    </div>
+
+                    <div class="chat-window">
+
+                        <h3 id="chatTitle">
+                            Aryan Singh
+                        </h3>
+
+                        <div id="chatMessages">
+
+                        </div>
+
+                        <div class="chat-input">
+
+                            <input id="messageInput" type="text" placeholder="Type a message...">
+
+                            <button onclick="sendMessage()">
+                                Send
+                            </button>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- COMMUNITY CHATS -->
+
+            <div id="communityChats" style="display:none;">
+
+                <div class="chat-layout">
+
+                    <div class="chat-sidebar">
+
+                        <div class="chat-person">
+                            AI & ML Club
+                        </div>
+
+                        <div class="chat-person">
+                            Startup Society
+                        </div>
+
+                        <div class="chat-person">
+                            Gaming Community
+                        </div>
+
+                    </div>
+
+                    <div class="chat-window">
+
+                        <div class="message received">
+                            Aryan: Workshop starts at 5 PM.
+                        </div>
+
+                        <div class="message received">
+                            Priya: I'll join.
+                        </div>
+
+                        <div class="message sent">
+                            Aditya: See you there 🚀
+                        </div>
+
+                        <div class="chat-input">
+
+                            <input type="text" placeholder="Message community...">
+
+                            <button>
+                                Send
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- PROFILE -->
+
+        <section id="profile" class="page">
+
+            <div class="profile-header">
+
+                <img class="profile-avatar" src="https://i.pravatar.cc/200?img=5">
+
+                <h1>Aditya Sirohi</h1>
+
+                <p>
+                    B.Tech CSE Core
+                </p>
+
+                <p>
+                    Building websites and startups.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- STORY VIEWER -->
+
+        <div id="storyViewer">
+
+            <div class="storyContainer">
+
+                <div class="storyProgress">
+
+                    <div id="storyProgressBar"></div>
+
+                </div>
+
+                <button id="prevStory">❮</button>
+
+                <button id="nextStory">❯</button>
+
+                <button id="closeStory">✕</button>
+
+                <div class="storyHeader">
+
+                    <img id="storyProfile">
+
+                    <div>
+
+                        <h3 id="storyUsername"></h3>
+
+                        <p>Just now</p>
+
+                    </div>
+
+                </div>
+
+                <img id="storyImage" src="">
+                <video id="storyVideo" playsinline muted></video>
+
+                <div id="storyCaption"></div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
